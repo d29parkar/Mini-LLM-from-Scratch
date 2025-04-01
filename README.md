@@ -183,11 +183,12 @@ Since this is a generative model trained with unsupervised learning, BLEU and RO
 **BERTScore F1:** 0.662  
 **Sentence Similarity:** 0.566
 
+The generated texts from the model are not highly coherent, but they do maintain some structure and loosely relate to specific topics. 
+
 ## Conclusion
 
-In this project, I successfully implemented a minimal-size language model from scratch, leveraging a large Wikipedia dataset for training. Through careful tokenization and model architecture design, the model achieved a respectable perplexity score, which indicates its ability to understand and predict text patterns effectively. I employed various sampling techniques, such as Top-P and Top-K, to generate coherent and contextually relevant text, demonstrating the model’s potential for real-world applications.
+In this project, I successfully implemented a minimal-size language model from scratch, leveraging a large Wikipedia dataset for training. Through careful tokenization and model architecture design, the model achieved a respectable perplexity score, which indicates its ability to understand and predict text patterns effectively. I employed various sampling techniques, such as Top-P and Top-K, to generate coherent and contextually relevant text, demonstrating the model’s potential for real-world applications. While the generated text isn't flawless, the model's performance is entirely reasonable given the constraints of training a minimal-size language model. The coherence of the generated text is in line with the model's design, the diversity of the dataset, and the computational resources available. Future improvements, such as fine-tuning with more specific datasets or expanding the model's architecture, could enhance performance further, but as of now, the model meets the expectations set by its original design.
 
-The architecture and training pipeline designed can be further improved by fine-tuning on more relevant datasets and increasing model complexity.
 
 ### 1. **Training and Evaluation Notebook (`training-redblock-gpt.ipynb`):**
    - The model uses **Keras 3.0** and **Keras-Hub** for building and training a transformer-based language model.
